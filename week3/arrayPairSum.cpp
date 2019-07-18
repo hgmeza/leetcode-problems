@@ -7,6 +7,8 @@ public:
     
     for(int i = 0; i < nums.size(); i+=2) {
       sum +=  min(nums[i], nums[i+1]);
+      // or
+      // sum += num[i] as it is guaranteed that num[i+1] is bigger
     }
     return sum;
   }
